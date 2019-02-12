@@ -87,10 +87,10 @@ def predict(pointing):
 def main():
     #gen_csv()
     global known
-    known = pd.read_csv('MPCORB.csv')
+    known = pd.read_csv('Distant.csv')
     pointings = open(sys.argv[1]).readlines()
-    predict(pointings[0])
-    #list(map(predict, pointings))
+    #predict(pointings[0])
+    list(map(predict, pointings))
 
 if __name__ == '__main__':
     main()		  
