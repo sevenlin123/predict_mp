@@ -26,7 +26,7 @@ import numpy as np
 from skyfield.api import Topos, Loader
 from scipy.optimize import newton
 
-load = Loader('./Skyfield-Data', expire=False)
+load = Loader('./Skyfield-Data', expire=True)
 planets = load('de423.bsp')
     
 class propagate:

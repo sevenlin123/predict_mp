@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import sys, os
-#from propagate_lite import propagate
+#from propagate import propagate
 from propagate import propagate_lite as propagate
 from astropy.time import Time
 from astropy.coordinates import SkyCoord
